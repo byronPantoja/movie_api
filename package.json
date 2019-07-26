@@ -1,0 +1,25 @@
+{
+  "name": "movie_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byronPantoja/movie_api.git"
+  },
+  "author": "developer833",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/byronPantoja/movie_api/issues"
+  },
+  "homepage": "https://github.com/byronPantoja/movie_api#readme",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1",
+    "request": "^2.88.0"
+  }
+}
