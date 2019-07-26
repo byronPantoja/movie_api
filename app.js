@@ -3,14 +3,16 @@ const app = express();
 const request = require('request');
 const port = 3000;
 
+app.set('view engine', 'ejs');
+
 app.get('/results', (req, res) =>
 	request('http://www.omdbapi.com/?s=guardians+of+the+galaxy&apikey=thewdb', function(
 		error,
 		response,
 		body
 	) {
-		const results = JSON.parse(body);
-		res.send(results['Search'][0]['Title']);
+		const data = JSON.parse(body);
+		res.render('results', { data: data });
 	})
 );
 
